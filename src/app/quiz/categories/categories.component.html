@@ -1,0 +1,3 @@
+<section class="answer_container" *ngFor="let content of quizCategories; let i = index">
+    <button (click)="navigateToQuiz(content?.id)"> <b>Categories {{ i + 1 }}  :</b> {{ content?.categorieNom }} </button>
+</section>
